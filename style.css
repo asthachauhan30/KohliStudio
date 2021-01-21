@@ -1,12 +1,43 @@
 <style>
-.nav-link{
-	color:blue;
+
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding:20px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
 }
-.nav-item>a:hover {
-	color:yellow;
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  color: yellow;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
 }
-.navbar-nav>.active>a{
-color:green;}
+
+      
+
+/* Style the logo */
+
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+/* Style the active/current link */
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
 #abc1{
   border :solid;
 }
@@ -119,19 +150,7 @@ color:white;
     -moz-transition: all 0.4s ease-in-out;
  }
  
-  .shrink a {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;       
-    }
-	.shrink .navbar-brand {
-        height: 0 !important;
-        line-height: 0 !important;
-    }
-	  .shrink {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        min-height: 55px !important;
-    }
+ 
 	.cardheight{
 		min-height:420px;
 	}

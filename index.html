@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-sacle=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no">
 	<link rel="stylesheet"  href="style.css">
 	<link rel="stylesheet"  href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> 
 	<title>KOHLI STUDIO</title>
@@ -18,60 +18,41 @@
     <script src= 
 "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"> 
     </script> 
-	
-	<!--navbar-->
-<div class= "conatiner">
-	 <nav class="navbar primary nav navbar-expand-lg navbar-light bg-light navbar-inverse bg-inverse fixed-top navbar-toggleable-sm py-3">
-	<div class="container"> 
-      <div class="col-lg-4 md-6 sm-6">
-<img src="images/logo.png" width="50" height="50" class="d-inline-block align-top" />
-  <a class="navbar-brand heading"href="index.html"><strong>KOHLI STUDIO</strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>MENU
-  </button>
-  </div>
-    <div class="col-lg-4">
- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-	</div>
-	   <div class="col-lg-4 md-6 sm-6 xs-12">
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link navbar-brand" href="#index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link navbar-brand" href="portfolio.html" target="_self">Portfolio</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	 <!-- Navigation-->
+	 <div class="conatiner" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top navbar-inverse bg-inverse" id="mainNav">
+		<div class="container">
+			<img src="images/logo.png" width="60" height="70" id="logos" class="d-inline-block align-top" />
+                <a class="navbar-brand js-scroll-trigger" href="#"><b><i>KOHLI STUDIO</i></b></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item navbar-brand"><a class="nav-link js-scroll-trigger" href="#index.html">Home</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link js-scroll-trigger" href="portfolio.html">Portfolio</a></li>
+						 <li class="nav-item dropdown">
+        <a class="nav-link js-scroll-trigger dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Courses
-        </a>
+        </a> 
 		
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <div class="dropdown-menu" id="#navbarDropdown"aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#webd" target="_self">Web development</a>
           <a class="dropdown-item" href="#data" target="_self">Data Analytics</a>
           <a class="dropdown-item" href="#hr" target="_self">HR</a>
         </div>
+		</li>
 		
-      </li>
-	 <!-- <li class="nav-item">
-        <a class="nav-link navbar-brand" href="price.html" target="_self">Pricing</a>
-      </li>-->
-	  <li class="nav-item">
-        <a class="nav-link navbar-brand" href="team.html"target="_self"> Design TEAM</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link navbar-brand" href="#contact" target="_self">Contact</a>
-      </li>
-    </ul>
-   </div>
-  </div>
-  </div>
-</nav>
-</div>
+     
+                        <li class="nav-item navbar-brand"><a class="nav-link js-scroll-trigger" href="team.html">DESIGN TEAM</a></li>
+                    
+                        <li class="nav-item navbar-brand"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+				</div>
+        </nav>
+		</div>
+  
 <!--carousel-->
  <div class="conatiner">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -177,114 +158,6 @@ Community Manager, <br>Dark Room Poets</i></b>
 </div>
 </div>
 
-<!--contact form
-<div  id="contact"class="container py-3" >
- <div class="row">  
-            <div class="col-lg-12 ">  
-                <div class="card" id="abc1">  
-                    <div class="card-header bg-primary text-white">  
-                        <h3 class="d-flex justify-content-center "><strong>CONTACT US</strong></h3>  
-                    </div>
-
-
-
-	<form class="needs-validation" novalidate >
-		<div class="form-row">
-		<div class="col-md-4 mb-3">
-			<label for="validationCustom01"><strong>First name</strong></label>
-			<input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
-			<div class="valid-feedback">
-				Looks good!
-			</div>
-		</div>
-			<div class="col-md-4 mb-3">
-			<label for="validationCustom02"><strong>Last name</strong></label>
-			<input type="text" class="form-control" id="validationCustom01" placeholder="Last name" value="" required>
-			<div class="valid-feedback">
-				Looks good!
-			</div>
-		</div>
-		<div class="col-md-4 mb-3">
-			<label for="validationCustomUsername"><strong>Username</strong></label>
-			<div class="input-group">
-			<div class="input-group-prepend">
-				<span class="input-group-text" id="inputgroupprepend"><strong>@</strong></span>
-			</div> 
-			
-			<input type="text" class="form-control" id="validationCustomUsername"placeholder="Username" aria-describedby="inputgroupprepend" required>
-			<div class="valid-feedback">
-				please choose a Username
-			</div>
-		</div>
-	</div>
-	<div class="col-md-6 mb-3">
-        <label for="validationCustom01"><strong>Email</strong></label>
-        <input type="Email" class="form-control" id="email" placeholder="Email" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="validationCustom02"><strong>Confirm Email</strong></label>
-        <input type="email" class="form-control" id="confirm_email" placeholder="Confirm Email" required>
-        <div class="valid-feedback">
-          Emails should match
-        </div>
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="validationCustom01"><strong>Password</strong></label>
-        <input type="Password" class="form-control" id="Password" placeholder="Password" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="validationCustom02"><strong>Confirm Password</strong></label>
-        <input type="Password" class="form-control" id="confirm_password" placeholder="Confirm Password" required>
-        <div class="valid-feedback">
-          Password should match
-        </div>
-      </div>
-	    <div class="col-sm-12 col-md-12 col-xs-12">  
-        <div class="form-group">  
-         <label for="address"><strong>Address</strong></label>  
-          <textarea class="form-control" rows="3" id="address" aria-describedby="inputGroupPrepend" required></textarea>  
-           <div class="invalid-feedback">please enter address</div>  
-             </div>  
-              </div> 
-			                     <div class="col-sm-12  mb-3">  
-                <div class="card">  
-                    <div class="card-footer bg-primary text-white">  
-                         <div class="float-right">  
-                                        <button class="btn btn-danger rounded-0" type="submit"><strong>Cancel</strong></button>  
-                                        <button class="btn btn-success rounded-0" type="submit"><strong>Submit</strong></button>  
-                                    </div>      
-                    </div>
-                                </div>
-
-                                </div>   
-								</div>
-								</form>
-</body>  <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>-->
 <!-- contact division-->
 <div id="contact" class="conatiner text-white">
 <h2 class="head"align="center"><strong><u>FOR ANY QUERIES</u></strong></h2>
@@ -310,7 +183,28 @@ E-mail:<a href="#" target="_new">co@cohli.tel</a><br></p>
 </div>
 </div>
 </div>
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("navbar").style.padding = "5px 10px";
+    document.getElementById("logos").style.fontSize = "20px";
+  } else {
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("logos").style.fontSize = "35px";
+  }
+}
 
+</script>
+<script>
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+</script>
 
 <script> 
         $(document).ready(function () { 
@@ -323,6 +217,59 @@ E-mail:<a href="#" target="_new">co@cohli.tel</a><br></p>
             }); 
         }); 
     </script> 
+	<script>
+	(function ($) {
+    "use strict"; // Start of use strict
+
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+        if (
+            location.pathname.replace(/^\//, "") ==
+                this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+        ) {
+            var target = $(this.hash);
+            target = target.length
+                ? target
+                : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top - 72,
+                    },
+                    1000,
+                    "easeInOutExpo"
+                );
+                return false;
+            }
+        }
+    });
+
+    // Closes responsive menu when a scroll trigger link is clicked
+    $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+
+    // Activate scrollspy to add active class to navbar items on scroll
+    $("body").scrollspy({
+        target: "#mainNav",
+        offset: 74,
+    });
+
+    // Collapse Navbar
+    var navbarCollapse = function () {
+        if ($("#mainNav").offset().top > 100) {
+            $("#mainNav").addClass("navbar-shrink");
+        } else {
+            $("#mainNav").removeClass("navbar-shrink");
+        }
+    };
+    // Collapse now if page is not at top
+    navbarCollapse();
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(navbarCollapse);
+})(jQuery); // End of use strict
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"/>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
