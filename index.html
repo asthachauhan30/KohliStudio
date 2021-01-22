@@ -20,14 +20,19 @@
     </script> 
 	 <!-- Navigation-->
 	 <div class="conatiner" id="navbar">
+	 <div class="row">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top navbar-inverse bg-inverse" id="mainNav">
 		<div class="container">
+		
+		<div class="col-lg-4 col-md-12 col-sm-12">
 			<img src="images/logo.png" width="60" height="70" id="logos" class="d-inline-block align-top" />
                 <a class="navbar-brand js-scroll-trigger" href="#"><b><i>KOHLI STUDIO</i></b></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+				</div>
+			
+                <div class="collapse navbar-collapse col-lg-8 col-md-12 col-sm-12" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item navbar-brand"><a class="nav-link js-scroll-trigger" href="#index.html">Home</a></li>
                         <li class="nav-item navbar-brand"><a class="nav-link js-scroll-trigger" href="portfolio.html">Portfolio</a></li>
@@ -48,9 +53,12 @@
                     
                         <li class="nav-item navbar-brand"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
-                </div>
+                
 				</div>
+				</div>
+				
         </nav>
+		</div>
 		</div>
   
 <!--carousel-->
@@ -183,28 +191,16 @@ E-mail:<a href="#" target="_new">co@cohli.tel</a><br></p>
 </div>
 </div>
 </div>
-<script>
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-    document.getElementById("navbar").style.padding = "5px 10px";
-    document.getElementById("logos").style.fontSize = "20px";
-  } else {
-    document.getElementById("navbar").style.padding = "10px 10px";
-    document.getElementById("logos").style.fontSize = "35px";
-  }
-}
-
-</script>
+<!--
 <script>
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 30) {
     $('nav').addClass('shrink');
   } else {
     $('nav').removeClass('shrink');
   }
 });
-</script>
+</script>-->
 
 <script> 
         $(document).ready(function () { 
@@ -235,7 +231,7 @@ $(window).scroll(function() {
             if (target.length) {
                 $("html, body").animate(
                     {
-                        scrollTop: target.offset().top - 72,
+                        scrollTop: target.offset().top - 70,
                     },
                     1000,
                     "easeInOutExpo"
@@ -258,7 +254,7 @@ $(window).scroll(function() {
 
     // Collapse Navbar
     var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
+        if ($("#mainNav").offset().top > 80) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
