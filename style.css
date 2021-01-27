@@ -33,6 +33,7 @@
   background-color: #ddd;
   color: blue;
 }
+.car{padding-top:80px;}
 /* Style the active/current link */
 #navbar a.active {
   background-color: dodgerblue;
